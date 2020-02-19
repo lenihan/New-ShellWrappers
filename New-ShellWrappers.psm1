@@ -38,6 +38,8 @@ Creates .ps1 (if FileToWrap is .py), .bat, extension-less shell wrappers in the 
 .LINK
 https://www.powershellgallery.com/packages/New-ShellWrappers
 
+.LINK
+https://github.com/lenihan/New-ShellWrappers
 #>
 function New-ShellWrappers {
     Param([Parameter(Mandatory=$true)][ValidateScript({Test-Path $PSItem})]$FileToWrap)
